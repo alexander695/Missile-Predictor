@@ -27,23 +27,30 @@ En lugar de entrenar con el método clásico de **backpropagation con gradiente 
 3. **Método Newton-Barrier**  
    - Añade **restricciones a los pesos** para evitar inestabilidad numérica.  
    - Se usa una **función de barrera logarítmica** como método de punto interior:
-     <img src="https://latex.codecogs.com/svg.latex?Phi(w)=E(w)-\mu\sum_i[\log(M-w_i)+\log(M+w_i)]">
+     
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}Phi(w)=E(w)-\mu\sum_i[\log(M-w_i)+\log(M+w_i)]">
 
-   - Mantiene los pesos en el rango seguro ![ecuacion](https://latex.codecogs.com/svg.latex?\([-M, M]\)).  
+   - Mantiene los pesos en el rango seguro
+   
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}\([-M, M]\)">
 
 4. **Modelos de trayectoria**  
    - **Misil balístico (sin propulsión):**  
      \[
-     ![ecuacion](https://latex.codecogs.com/svg.latex?x(t) = v_0 \cos(\alpha)\, t)
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}x(t)=v_0\cos(\alpha)\,t)">
      \]  
      \[
-     ![ecuacion](https://latex.codecogs.com/svg.latex?y(t) = v_0 \sin(\alpha)\, t - \tfrac{1}{2} g t^2)
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}y(t)=v_0\sin(\alpha)\,t-\tfrac{1}{2}gt^2)">
      \]
    - **Misil con thruster:**  
      \[
-     ![ecuacion](https://latex.codecogs.com/svg.latex?y(t) = v_0 \sin(\alpha)\, t - \tfrac{1}{2} g t^2 + T(t))
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}y(t)=v_0\sin(\alpha)\,t-\tfrac{1}{2}gt^2+T(t))">
      \]  
-     donde ![ecuacion](https://latex.codecogs.com/svg.latex?\(T(t)\)) es la fuerza de empuje adicional.  
+     donde
+
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}\(T(t)\))">
+
+     es la fuerza de empuje adicional.  
 
 5. **Resultados de simulación**  
    - **Newton:** rápida convergencia en trayectorias simples.  
