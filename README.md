@@ -27,7 +27,7 @@ En lugar de entrenar con el método clásico de **backpropagation con gradiente 
 3. **Método Newton-Barrier**  
    - Añade **restricciones a los pesos** para evitar inestabilidad numérica.  
    - Se usa una **función de barrera logarítmica** como método de punto interior:
-     https://latex.codecogs.com/svg.latex?Phi(w)=E(w)-\mu\sum_i[\log(M - w_i) + \log(M + w_i)]
+     <img src="https://latex.codecogs.com/svg.latex?Phi(w)=E(w)-\mu\sum_i[\log(M - w_i) + \log(M + w_i)]">
 
    - Mantiene los pesos en el rango seguro ![ecuacion](https://latex.codecogs.com/svg.latex?\([-M, M]\)).  
 
