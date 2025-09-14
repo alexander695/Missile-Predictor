@@ -33,7 +33,7 @@ En lugar de entrenar con el método clásico de **backpropagation con gradiente 
    - Mantiene los pesos en el rango seguro
 
    
-     <img src="https://latex.codecogs.com/svg.latex?\color{white}\([-M, M]\)">
+     <img src="https://latex.codecogs.com/svg.latex?\color{white}([-M, M]\)">
 
 4. **Modelos de trayectoria**  
    - **Misil balístico (sin propulsión):**  
